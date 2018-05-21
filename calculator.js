@@ -41,12 +41,20 @@ divide.addEventListener("click", ()=>{
 result.addEventListener("click", ()=>{
 	if (operator == "+"){
 		display.innerHTML = (Number(d1.value)+Number(d2.value))
+		d1.value = ""
+		d2.value = ""
 	} else if (operator == "-"){
 		display.innerHTML = (Number(d1.value)-Number(d2.value))
+		d1.value = ""
+		d2.value = ""
 	} else if (operator == "*"){
 		display.innerHTML = (Number(d1.value)*Number(d2.value))
+		d1.value = ""
+		d2.value = ""
 	} else if (operator == "/"){
 		display.innerHTML = (Number(d1.value)/Number(d2.value))
+		d1.value = ""
+		d2.value = ""
 	}
 	console.log("You clicked equals")
 })
